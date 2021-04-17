@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey form</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">A survey form for your next Sony Alpha camera</p>
+      </header>
+      <form action="#" id="survey-form">
+        <div class="form-group">
+          <label class="color" for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label class="color" for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label class="color" for="number" id="number-label"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="18"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p class="color">What is the current camera brand you use?</p>
+          <select name="role" id="dropdown" class="form-control" required>
+            <option disabled selected value>Select</option>
+            <option value="S">Sony</option>
+            <option value="C">Canon</option>
+            <option value="N">Nikon</option>
+            <option value="P">Panasonic</option>
+            <option value="O">Olympus</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p class="color">what is the current camera brand you use?</p>
+          <label class="colors">
+            <input
+              type="radio"
+              name="user-recommend"
+              class="input-radio"
+              checked
+              value="definitely"
+            />Sony Alpha a7III
+          </label>
+          <label class="colors">
+            <input
+              type="radio"
+              name="user-recommend"
+              class="input-radio"
+              checked
+              value="no"
+            />Sony Alpha a9
+          </label>
+          <label class="colors">
+            <input
+              type="radio"
+              name="user-recommend"
+              class="input-radio"
+              checked
+              value="yes"
+            />Sony Alpha a9II
+          </label>
+        </div>
+        <div class="form-group">
+          <p class="color">
+            What kind of photography do you prefer?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+          <label class="colors">
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              name="prefer"
+              value="front"
+            />Wildlife
+          </label>
+          <label class="colors">
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              name="prefer"
+              value="end"
+            />Astrophotography
+          </label>
+          <label class="colors">
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              name="prefer"
+              value="js"
+            />Sport
+          </label>
+          <label class="colors">
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              name="prefer"
+              value="react"
+            />Portrait
+          </label>
+        </div>
+        <div class="form-group">
+          <p class="color">What do you expect from the Sony camera?</p>
+          <textarea
+            class="input-textarea"
+            name="comment"
+            id="comments"
+            cols="30"
+            rows="5"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <div class="bot">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
