@@ -1,3 +1,3 @@
 # freeCodeCamp-SurveyForm
 
-freeCodeCamp project - Survey Form
+freeCodeCamp PROJECT - Survey Form
